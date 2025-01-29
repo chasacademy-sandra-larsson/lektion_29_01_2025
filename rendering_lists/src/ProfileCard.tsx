@@ -14,7 +14,7 @@ function ProfileCard({name, img, skills, city, born}: ProfileCardProps) {
 
      
     return (
-        <article style={{border: '1px solid black', padding: '10px', margin: '10px'}}>
+        <article style={{border: '1px solid black'}}>
             <h1>Name {name}</h1>
             <img src={img}/>
             <p> Skills {skills}</p>
