@@ -1,3 +1,5 @@
+import styles from "./ProfileCard.module.css"
+
 type ProfileCardProps = {
     name: string;
     img: string;
@@ -14,7 +16,7 @@ function ProfileCard({name, img, skills, city, born}: ProfileCardProps) {
 
      
     return (
-        <article style={{border: '1px solid black'}}>
+        <article className={styles.card}>
             <h1>Name {name}</h1>
             <img src={img}/>
             <p> Skills {skills}</p>
